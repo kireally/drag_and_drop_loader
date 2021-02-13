@@ -1,0 +1,9 @@
+@import './config/reset';
+@import './config/variables';
+@import './config/mixins';
+
+@import './components/base-layout';
+@import './components/header';
+@import './components/main';
+@import './components/list-of-nodes';
+@import './components/image-area';

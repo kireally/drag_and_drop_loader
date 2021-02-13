@@ -1,0 +1,13 @@
+/*Media queries====================
+=================================*/
+@mixin little-screen {
+    @media(max-width: 768px) {
+        @content
+    }
+};
+
+@mixin middle-screen {
+    @media(max-width: 1000px) {
+        @content
+    }
+}

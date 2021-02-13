@@ -1,0 +1,73 @@
+.list-of-nodes {
+    flex: 1;
+    height: 35vw;
+    max-height: 500px;
+    margin-right: 5%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: $shadow;
+    overflow-y: auto;
+
+    @include middle-screen {
+        height: 50vw;
+    }
+
+    @include little-screen {
+        flex: auto;
+        order: 5;
+        max-width: 500px;   
+        width: 90vw;
+        max-height: 500px;
+        height: 90vw;
+        margin-right: 0;
+    }
+
+    &__heading {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: $title-text;
+        color: $text-color;
+        font-weight: 700;
+    }
+
+    &__switch-btn {
+        display: inline-block;
+        position: relative;
+        width: 62px;
+        height: 24px;
+        border-radius: 12px;
+        background-color: $secondary-color;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            height: 36px;
+            width: 36px;
+            border-radius: 18px;
+            background: $main-color;
+            box-shadow: 0 0 10px 0 #999999;
+        }
+
+        &--on {
+            background-color: rgb(173, 186, 187);
+            box-shadow: inset 0 0 10px 0 #999999;
+
+            &::after {
+                left: 30px;
+                background: $main-color;
+            }
+        }
+    }
+}
+
+.highlited-text {
+    color: $main-color;
+    background-color: $highlight-color;    
+}

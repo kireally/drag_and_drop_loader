@@ -1,0 +1,108 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    
+    @include middle-screen {
+        width: 90%;
+        margin: 0 auto 30px;
+    }
+    
+    @include little-screen {
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 15px;
+
+    @include little-screen {
+        align-items: center;
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+    &__search-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    
+        width: 25%;
+        height: 40px;
+        font-size: $primary-text;
+        background: transparent url(../img/header/search.png) no-repeat center left 7px;
+        border-radius: 3px;
+        box-shadow: $shadow;
+
+        ::placeholder {
+            color: $text-color;
+        }
+
+        @include little-screen {
+            width: 90%;
+        }
+    }
+
+    &__search-input {
+        width: 85%;
+        color: $text-color;
+        background-color: transparent;
+        border: none; 
+    }
+
+    &__log-in {
+        width: 25%;
+        height: 40px;
+        margin-left: 3%;
+        font-size: $primary-text;
+        color: $text-color;
+        background-color: transparent;
+        border: none;
+        border-radius: 3px;
+        box-shadow: $shadow;
+
+        @include little-screen {
+            width: 90%;
+            margin: 10px 0 0;
+        }
+    }
+}
+
+.drop-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+
+    font-size: $drop-area-text;
+    border: 3px dashed $secondary-color;
+    color: $secondary-color;
+    cursor: pointer;
+    border-radius: 10px;
+
+    @include little-screen {
+        order: 5;
+        margin-top: 20px;
+    }
+
+    &__input {
+        display: none;
+    }
+
+   
+    &--highlight {
+        border-color: $highlight-color;
+        color: $highlight-color;
+    }
+}
+
+
+

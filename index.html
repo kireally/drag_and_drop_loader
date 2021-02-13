@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/bundle.css">
+    <script defer src="dist/bundle.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="buttons">
+                <div class="buttons__search-container">
+                    <input type="text" class="buttons__search-input" placeholder="Search...">
+                </div>
+                <button class="buttons__log-in">Log in</button>
+            </div>
+            <div class="drop-area">
+                <span class="drop-area__prompt">Drop file here</span>
+                <input type="file" class="drop-area__input">
+            </div>
+        </header>
+        <main class="main">
+            <section class="list-of-nodes">
+                <div class="list-of-nodes__heading">
+                    <h2 class="list-of-nodes__title">List of nodes</h2>
+                    <div class="list-of-nodes__switch-btn"></div>
+                </div>
+                <div class="list-of-nodes__main"></div>
+            </section>
+
+            <div class="image-area"></div>
+
+            <div class="modal-confirm">
+                <p class="modal-confirm__text">Enter tag you want to add</p>
+                <input type="text" class="modal-confirm__input" placeholder="Tag...">
+                <div class="modal-confirm__buttons">
+                    <button class="modal-confirm__submit-btn">Ok</button>
+                    <button class="modal-confirm__cancel-btn">Cancel</button>
+                </div>
+            </div>
+        </main>
+    </div><!-- END WRAPPER -->
+</body>
+</html>

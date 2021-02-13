@@ -1,0 +1,33 @@
+.image-area {
+    width: 35vw;
+    max-width: 500px;
+    height: 35vw;
+    max-height: 500px;
+
+    background: center/ cover;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: $shadow;
+
+    @include middle-screen {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    @include little-screen {
+        width: 90vw;
+        height: 90vw;
+        margin-bottom: 20px;
+    }
+}
+
+.img-tag {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/image-area/tag.png');
+}
+
+.highlighted-tag {
+    background-image: url('../img/image-area/highlited-tag.png');
+}
