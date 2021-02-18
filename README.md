@@ -22,6 +22,5 @@ TEST_PROJECT
 ## Installation:
 -	Git clone https://github.com/kireally/test_project.git
 -	Npm i
--	Npm run build
 -	Open index.html
 
